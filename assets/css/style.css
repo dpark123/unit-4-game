@@ -37,34 +37,58 @@ img{
 }
 
 h1{
-    color: red;
-    background-color: yellow;
-    width: 500px;
+    color: aquamarine;
+    background-color: silver;
+    
+    text-align: center;
 }
 
 #rules{
-    background-color: peachpuff;
-    color: green;
-    height: 350px;
-    width: 500px;
+    background-color: silver;
+    color: black;
+    
+}
+
+#goalBox{
+    background-color: gray;
+    width: 100px;
+    height: 120px;
 }
 
 #goal{
-    background-color: forestgreen;
-    width: 100px;
-    height: 120px;
     font-size: 45px;
-    color: lightpink;
-   
+    color: coral;
 }
 
 #record{
-    color:forestgreen;
-    background-color: lightpink;
+    color:aquamarine;
+    background-color: silver;
     width: 100px;
     height: 120px;
+}
+
+#scoreTitle{
+    background-color: skyblue;
+    width: 200px;
+    color: rgb(92, 34, 44)
+}
+
+#score{
+    background-color: skyblue;
+    width: 200px;
+    font-size: 45px;
+    height: 90px;
+    color: rgb(92, 34, 44)
+}
+
+#status{
+    font-size: 20px;
 }
 
 p.align{
     display:inline;
 }
+
+button {
+    outline: none;
+  }

@@ -16,62 +16,76 @@
     <div class="container">
 
         <div class="row">
-            <h1>Crystal Collector!</h1>
-        </div>
-
-        <div class="row">
-            <div id="rules">
-                <p>You will be given a random number at the start of the game.</p>
-
-                <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to
-                    your
-                    total score.</p>
-
-                <p>You win the game by matching your total score to random number, you lose the game if your total score
-                    goes
-                    above the random number.</p>
-
-                <p>The Value of each crystal is hiddenn from you until you clcik on it.</p>
-
-                <p>Each time when the game starts, the game will change the values of each crystal.</p>
+            <div class="col-md-12 m-1">
+                <h1>Crystal Collector!</h1>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-md-1 m-1">
-                <div id="goal"></div>
+            <div class="col-md-12 m-1">
+                <div id="rules">
+                    <p>You will be given a random number at the start of the game.</p>
+
+                    <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points
+                        to
+                        your
+                        total score.</p>
+
+                    <p>You win the game by matching your total score to random number, you lose the game if your total
+                        score
+                        goes
+                        above the random number.</p>
+
+                    <p>The Value of each crystal is hiddenn from you until you clcik on it.</p>
+
+                    <p>Each time when the game starts, the game will change the values of each crystal.</p>
+                </div>
             </div>
-            <div class="col-md-2 m-1">
-                <div id="record">
-                    <div id="status"></div>
-                    <div>Wins: <p class="align" id="wins"></p></div>
-                    <div>Losses: <p class="align" id="losses"></p></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 m-1 text-center">
+                <button id="blueImg"></button>
+                <button id="greenImg"></button>
+                <button id="redImg"></button>
+                <button id="yellowImg"></button>
+            </div>
+        </div>
+
+        <div class="row justify-content-between">
+            <div class="col m-1">
+                <div class="row">
+                    <div class="m-1" id="goalBox">Match this number:
+                        <div class="text-center" id="goal"></div>
+                    </div>
+                    
+                    <div class="m-1" id="record">
+                        <div id="status"></div>
+                        <div>Wins: <p class="align" id="wins"></p>
+                        </div>
+                        <div>Losses: <p class="align" id="losses"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col m-1">
+                <div class="row">
+                    <div class="m-1" id="scoreTitle">
+                        Your total score is:
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <p class="m-1" id="score"></p>
                 </div>
             </div>
         </div>
 
-        <div class="row">
-            <button id="blueImg"></button>
-            <button id="greenImg"></button>
-            <button id="redImg"></button>
-            <button id="yellowImg"></button>
-        </div>
-
-        <div class="row">
-            <div>
-                Your total score is: 
-                <p  class="align" id="score"></p>
-            </div>
-
-            
-        </div>
-
     </div>
+
     <!--Jquery-->
-
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
     <script type="text/javascript" src="./assets/javascript/game.js"></script>
+
 </body>
 
 </html>
