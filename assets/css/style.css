@@ -4,7 +4,30 @@ img{
     margin:0;
 }
 
-.example{
+#blueImg{
     background-image: url(../images/blueCrystal.jpg);
-    background-size: 100px;
+    background-size: 100px 110px;
+    width:100px;
+    height: 110px;
+}
+
+#redImg{
+    background-image: url(../images/redCrystal.jpg);
+    background-size: 100px 110px;
+    width:100px;
+    height: 110px;
+}
+
+#greenImg{
+    background-image: url(../images/greenCrystal.jpg);
+    background-size: 100px 110px;
+    width:100px;
+    height: 110px;
+}
+
+#yellowImg{
+    background-image: url(../images/yellowCrystal.jpg);
+    background-size: 100px 110px;
+    width:100px;
+    height: 110px;
 }

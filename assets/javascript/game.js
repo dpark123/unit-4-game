@@ -29,32 +29,34 @@ function setGame(){
     $("#goal").html(goal);
     
 }
-$("#game").on("click", function(){
-    
-    $("#blue").on("click", function(){
-        score = blueNumber+score;
-        console.log(score);
-        $("#score").html(score);
-    });
-    
-    $("#green").click(function(){
-        score = greenNumber+score;
-        console.log(score);
-        $("#score").html(score);
-    });
-    
-    $("#red").click(function(){
-        score = redNumber+score;
-        console.log(score);
-        $("#score").html(score);
-    });
-    
-    $("#yellow").click(function(){
-        score = yellowNumber+score;
-        console.log(score);
-        $("#score").html(score);
-    });
-    
+
+$("#blueImg").click(function(){
+    score = blueNumber+score;
+    console.log(score);
+    $("#score").html(score);
+});
+
+$("#greenImg").click(function(){
+    score = greenNumber+score;
+    console.log(score);
+    $("#score").html(score);
+});
+
+$("#redImg").click(function(){
+    score = redNumber+score;
+    console.log(score);
+    $("#score").html(score);
+});
+
+$("#yellowImg").click(function(){
+    score = yellowNumber+score;
+    console.log(score);
+    $("#score").html(score);
+});
+
+$(document).on("click", function(){
+
+
     if(score === goal){
         wins++;
         reset();
@@ -63,9 +65,7 @@ $("#game").on("click", function(){
         losses++;
         reset();
     }
-
-});
-
+})
 
 function reset(){
     score = 0;
@@ -78,7 +78,6 @@ function reset(){
     $("#losses").html(losses);
     $("#score").html(score);
     $("#goal").html(goal);
-    
 }
 
 setGame ();
