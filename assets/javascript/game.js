@@ -1,33 +1,17 @@
-/*function displayImage(){
-    $("#crystal-images").html('<img src= "../images/blueCrystal.jpg" width="50px">');
-    $("#crystal-images").html('<img src="/images/greenCrystal.jpg">');
-    $("#crystal-images").html('<img src="../assets/images/redCrystal.jpg">');
-    $("#crystal-images").html('<img src="yellowCrystal.jpg">');
-}
-
-displayImage();*/
-
 var wins = 0;
 var losses = 0;
-var goal;
+var goal = Math.floor(Math.random()*120)+19;//19-120
 var score = 0;
-var blueNumber;
-var greenNumber;
-var redNumber;
-var yellowNumber;
-
-goal = Math.floor(Math.random()*120)+19;//19-120
-blueNumber = Math.floor(Math.random()*12)+1;//1-12
-greenNumber = Math.floor(Math.random()*12)+1;
-redNumber = Math.floor(Math.random()*12)+1;
-yellowNumber = Math.floor(Math.random()*12)+1;
+var blueNumber = Math.floor(Math.random()*12)+1;//1-12
+var greenNumber = Math.floor(Math.random()*12)+1;
+var redNumber = Math.floor(Math.random()*12)+1;
+var yellowNumber = Math.floor(Math.random()*12)+1;;
 
 function setGame(){
     $("#wins").html(wins);
     $("#losses").html(losses);
     $("#score").html(score);
     $("#goal").html(goal);
-    
 }
 
 $("#blueImg").click(function(){
@@ -55,15 +39,15 @@ $("#yellowImg").click(function(){
 });
 
 $(document).on("click", function(){
-
-
     if(score === goal){
         wins++;
         reset();
+        $("#status").html("You win!");
     }
     else if(score > goal){
         losses++;
         reset();
+        $("#status").html("You lose :(");
     }
 })
 

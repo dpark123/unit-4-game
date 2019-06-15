@@ -1,3 +1,7 @@
+body{
+    background-image: url(../images/dark-grey-terrazzo/dark-grey-terrazzo.png);
+}
+
 img{
     padding:0;
     border:0;
@@ -30,4 +34,37 @@ img{
     background-size: 100px 110px;
     width:100px;
     height: 110px;
+}
+
+h1{
+    color: red;
+    background-color: yellow;
+    width: 500px;
+}
+
+#rules{
+    background-color: peachpuff;
+    color: green;
+    height: 350px;
+    width: 500px;
+}
+
+#goal{
+    background-color: forestgreen;
+    width: 100px;
+    height: 120px;
+    font-size: 45px;
+    color: lightpink;
+   
+}
+
+#record{
+    color:forestgreen;
+    background-color: lightpink;
+    width: 100px;
+    height: 120px;
+}
+
+p.align{
+    display:inline;
 }
