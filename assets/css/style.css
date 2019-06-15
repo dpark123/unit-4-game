@@ -1,0 +1,10 @@
+img{
+    padding:0;
+    border:0;
+    margin:0;
+}
+
+.example{
+    background-image: url(../images/blueCrystal.jpg);
+    background-size: 100px;
+}
